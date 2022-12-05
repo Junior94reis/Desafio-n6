@@ -1,0 +1,195 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}body{
+    width: 100vw;
+    height: 100vh;
+    background-image: url(/css/fundo.png);
+    background-size: cover;
+    background-position: center;
+    /* z-index: -1; */
+}
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #f9f9f9;
+}
+main .container-name{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+main .container-name span{
+    margin-top: 45px;
+    margin-bottom:55px ;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-family: 'B612';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+}
+main .container-name h1{
+    font-size:96px ;
+    margin-bottom: 115px;
+}
+main .container-princ{
+    display: flex;
+    gap: 5rem;
+}
+main .container-princ .container-feed p {
+    font-family: 'B612';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 32px;
+    
+}
+main .reels{
+    display: flex;
+    gap:9rem;
+    align-items: center;
+    margin-bottom: 2rem;
+    margin-top: 45px;
+}
+main .reels .tempo{
+    display: flex;
+    width: 25px;
+    height: 25px;
+    align-items: center;
+    gap: 0.1rem;
+}
+main .reels .star{
+    display: flex;
+    justify-content: center;
+    gap:10px;
+}
+main .reels span{
+    font-family: 'B612';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+}
+main .container-feed .buttons{
+    display: flex;
+    gap: 1rem;
+    
+}
+main .container-princ .container-feed .buttons button:nth-child(1){
+    background: #0072D2;
+    border-radius: 3px;
+    border:none;
+    color:#f9f9f9;
+    font-weight: 700;
+    cursor: pointer;
+}
+main .container-princ .container-feed .buttons button:nth-child(2){
+    background: #131318;
+    border: 1px solid #FFFFFF;
+    border-radius: 3px;
+    color: #f9f9f9;
+    cursor: pointer;
+}
+.background{
+    display: none;
+}
+
+/*---------mobile---------*/
+@media (max-width:1000px){
+
+    main .container-princ .container-feed p {
+        width: 32rem !important;
+    }
+    main .reels{
+        gap:5rem;
+        justify-content: center;
+    }
+}
+@media (max-width:600px){
+    .container-img{
+        display: none;
+    }
+    .container-feed{
+        width: 100vw;
+    }
+    main .container-princ .container-feed p{
+        display: none;
+    }
+    .background{
+        display: flex;
+        position: relative;
+        bottom:180px;
+        justify-content: center;
+        align-items: center;
+        
+    }
+    .star img {
+        Width:16.67px;
+        Height:15.85px;
+    }
+    .tempo img{
+        Width:18px;
+        Height:18px;
+    }
+    .tempo h6{
+        font-family: 'B612';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 19px;
+        color: #FFFFFF;
+        margin-left:5px;
+
+    }
+    main .container-name h1{
+        font-size: 64px;
+    }
+    main .container-name span{
+        font-size: 18px;
+    }
+    .background h6{
+       
+        max-width: 312px;
+        position: absolute;
+        bottom: -80px;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 170%;
+        
+        /* border-top:1px solid #f9f9f9; */
+        padding-top: 80px;
+    }
+    .buttons{
+        display: flex;
+        justify-content: center;
+        background: #19191F;
+        width: 100% !important;
+        height: 250px;
+        border-radius: 20px 20px 0px 0px;
+        margin-bottom: 30px;
+
+   }
+   hr{
+    margin-bottom: 30px;
+    width: 311px;
+    border:1px solid rgba(196, 196, 196, 0.08);
+   }
+   main .container-feed .buttons button{
+    margin-top:30px;
+   }
+   main .container-princ .container-feed .buttons button:nth-child(1){
+    width: 150px !important;
+    height: 35px !important;
+    border-radius: 3px;
+   }
+   main .container-princ .container-feed .buttons button:nth-child(2){
+    width: 150px !important;
+    height: 35px !important;
+    border-radius: 3px;
+   }
+   
+}
